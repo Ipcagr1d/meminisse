@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% with message = get_flashed_messages() %}
+{% if messages %}
+<header class="alert alert-primary border text_center" role="alert">
+    {{ message }}
+</header>
+{% endif %}
+{% endwith %}
+
+{% block main %}
+    <div class="container-fluid" id="details">
+      <h1 class="text-center title">
+        Welcome to Meminisse!
+      </h1>
+      <p class="text-justify intro">
+        This is a personal project web app dedicated entirely for my own usage, but you can use it too! or even help me make this web app even more useful, consider dropping to my Github page and fork it. And now to the details! first things first this web app is designed to be as light as possible, and will not save any data that you enter on this site in any way. 
+      </p>
+      <p class="text-justify intro">
+        So what is the purpose of this website? Well the true purpose is to help me create a simple, easy to remember, but secure passwords generating an individualized based sequence that is based to your personal preference. Because complex password is just a bit hard to remember making us jotting it down somewhere to avoid forgetting it, Meminisse aims to remove this entirely by using words or sentence that is closely related to you and only you, and generating the password based on that.
+      </p>
+    </div>
+    <div>
+        <div class="form-group">
+          <label for=""></label>
+          <input type="text"
+            class="form-control" name="input" id="" aria-describedby="helpId" placeholder="Enter here">
+          <small id="helpId" class="form-text text-muted text-center">Enter your string here</small>
+        </div>
+    </div>
+{% endblock %}
