@@ -45,26 +45,27 @@ def infer_spaces(s):
         out.append(s[i-k:i])
         i -= k
 
-    return " ".join(reversed(out))
+    return list(reversed(out))
 
 def add_divider(word_list):
     special_char = ['@','!','#','$','%','^','&','*','(',')','<','>','?','/','}','{','~',':']
     for words in word_list:
         if special_char not in words:
-            print(words.append(random.choice(special_char)))
+            word_list_sym = [w]
 
 def make_list():
-    sentence = "This is my name test testing run"
-    s = get_words(sentence)
-    
+    sentence =  'test my name is'
+    s = sentence
+
     if ' ' not in s:
         # if there is not spaces infer the sentence then store as list
-        words = (infer_spaces(s))
-        word_list = words.split()
+        words_list = (infer_spaces(s))
+        print(words_list)
         
     else:
         # store as list
-        word_list = s.split()
-
-    add_divider(word_list)
+        words_list = s.split
+        print(words_list)
             
+if __name__=="__main__":
+    make_list()
