@@ -47,25 +47,45 @@ def infer_spaces(s):
 
     return list(reversed(out))
 
-def add_divider(word_list):
+# add symbol as divider between words insert randomly from preconfig list
+def add_divider(words_list):
     special_char = ['@','!','#','$','%','^','&','*','(',')','<','>','?','/','}','{','~',':']
-    for words in word_list:
-        if special_char not in words:
-            word_list_sym = [w]
+    symbol_add = random.choice(special_char)
+    words_list_sym = [s + symbol_add for s in words_list]
+    print(words_list_sym)
+    return words_list_sym
 
+#abcdefghijklmnopqrstuvwxyz
+def rep_char_to_int(words_list_sym):
+    replace_words_list_sym = [words.replace('i','1').replace('z','2').replace('e','3').replace('a','4').replace('s','5').replace('b','6').replace('J','7').replace('B','8').replace('g','9') for words in words_list_sym]
+    print(replace_words_list_sym)
+    return replace_words_list_sym
+
+def capitalize(replace_words_list_sym):
+    final_list = [word.capitalize() for word in replace_words_list_sym]
+    return ''.join(final_list)
+
+# make the list from user input to pass to other function
 def make_list():
-    sentence =  'test my name is'
+    sentence =  'this is my name'
     s = sentence
 
     if ' ' not in s:
         # if there is not spaces infer the sentence then store as list
         words_list = (infer_spaces(s))
         print(words_list)
+        return words_list
         
     else:
         # store as list
-        words_list = s.split
+        words_list = s.split()
         print(words_list)
+        return words_list
             
 if __name__=="__main__":
-    make_list()
+    words_list = make_list()
+    words_list_sym = add_divider(words_list)
+    replace_words_list_sym = rep_char_to_int(words_list_sym)
+    print(capitalize(replace_words_list_sym))
+    
+    
