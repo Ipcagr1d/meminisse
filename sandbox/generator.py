@@ -87,5 +87,3 @@ if __name__=="__main__":
     words_list_sym = add_divider(words_list)
     replace_words_list_sym = rep_char_to_int(words_list_sym)
     print(capitalize(replace_words_list_sym))
-    
-    

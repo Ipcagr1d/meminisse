@@ -24,12 +24,20 @@
         So what is the purpose of this website? Well the true purpose is to help me create a simple, easy to remember, but secure passwords generating an individualized based sequence that is based to your personal preference. Because complex password is just a bit hard to remember making us jotting it down somewhere to avoid forgetting it, Meminisse aims to remove this entirely by using words or sentence that is closely related to you and only you, and generating the password based on that.
       </p>
     </div>
-    <div>
+    <form action="/" method="POST">
         <div class="form-group">
           <label for=""></label>
           <input type="text"
-            class="form-control" name="input" id="" aria-describedby="helpId" placeholder="Enter here">
+            class="form-control" autocomplete="off" autofocus name="input" id="input-field" aria-describedby="helpId" placeholder="Enter here">
+            <button type="submit" class="btn btn-dark btn-block" name="generate" >Generate</button>
           <small id="helpId" class="form-text text-muted text-center">Enter your string here</small>
         </div>
+    </form>
+    <div class="container">
+      <div class="section">
+        <div class="d-flex justify-content-center">
+          <em>{{result}}</em>
+        </div>
+      </div>
     </div>
 {% endblock %}
