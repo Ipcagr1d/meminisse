@@ -6,7 +6,7 @@
 - Python 3
 - Flask
 
-### Release v0.0.1 Tibubiu
+### Release v0.0.2 Megati
 
 Initial functional code release, not yet deployed on PaaS
 basic functionality requires flask and python 3 to run.
@@ -15,8 +15,7 @@ basic functionality requires flask and python 3 to run.
 
 1. Error catching,
 2. Algorithm improvement
-3. Add features, support, about HTML pages.
-4. UI revamp
+3. UI revamp
 
 ### Quick start
 
@@ -28,7 +27,7 @@ $ [meminisse directory] flask run
 
 ### Contribution guide
 
-Fork the repo add you changes, and submit a pull request
+Fork the repo add your changes, and submit a pull request
 
 
 
