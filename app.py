@@ -36,3 +36,24 @@ def index():
 
     else:
         return render_template("index.html")
+
+
+@app.route("/documentation", methods=["GET"])
+def docs():
+    """Display documentation.html"""
+
+    return render_template("documentation.html")
+
+
+@app.route("/support", methods=["GET"])
+def support():
+    """Display support.html"""
+
+    return render_template("support.html")
+
+
+@app.route("/about", methods=["GET"])
+def about():
+    """Display about.html"""
+
+    return render_template("about.html")

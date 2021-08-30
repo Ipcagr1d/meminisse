@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Support
+{% endblock %}
+
+{% with message = get_flashed_messages() %}
+{% if messages %}
+<header class="alert alert-primary border text_center" role="alert">
+    {{ message }}
+</header>
+{% endif %}
+{% endwith %}
+
+{% block main %}
+    <div class="container-fluid justify-content-center" id="doc-content">
+        <h1 class="text-center">
+            Support
+        </h1>
+        <h3 class="text-center">
+            Visit  <a href="https://github.com/Ipcagr1d/meminisse">Meminisse repository on my github</a>
+        </h3>
+    </div>
+{% endblock %}

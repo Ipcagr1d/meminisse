@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Documentation
+{% endblock %}
+
+{% with message = get_flashed_messages() %}
+{% if messages %}
+<header class="alert alert-primary border text_center" role="alert">
+    {{ message }}
+</header>
+{% endif %}
+{% endwith %}
+
+{% block main %}
+    <div class="container-fluid justify-content-center" id="doc-content">
+        <h1 class="text-center">
+            Documentation
+        </h1>
+        <p class="text-justify intro">
+            The purpose of this web app is mainly personal reasons, per stated on the main page, how's this web app work is fairly simple aiming for an extremly easy user interface with 1 input form only (index.html line 37-45), then display the result with preset variable <code>result</code> in main app all of the functions that is used to generate password is located in <code>helpers.p</code>, includes sequential process which is getting the user input, transform the string, the return the final product as <code>capitalize(replace_words_list_sym)</code>, to ease the development of this algorithm you can use the <code>sandbox</code> that has the perfect copy of <code>helpers.py</code>.
+        </p>
+    </div>
+{% endblock %}
