@@ -6,10 +6,9 @@
 - Python 3
 - Flask
 
-### Release v0.0.2 Megati
+### Release v0.0.3 Ambarawa
 
-Initial functional code release, not yet deployed on PaaS
-basic functionality requires flask and python 3 to run.
+Deyloyed to heroku https://reminisse.herokuapp.com/
 
 ### To be added
 
@@ -19,7 +18,9 @@ basic functionality requires flask and python 3 to run.
 
 ### Quick start
 
-Make sure flask is installed first
+if you decided to run this locally
+Make sure requirements is installed first
+check the requirements.txt for more info
 
 ```
 $ [meminisse directory] flask run
