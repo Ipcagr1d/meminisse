@@ -34,3 +34,9 @@ $ [meminisse directory] flask run
 ### Contribution guide
 
 Fork the repo add your changes, and submit a pull request
+
+#### Video Demo: To Be Added
+#### Description:
+
+Create password based on user string input be it a sensible sentence or not,
+tailored to be easy to remeber and variable enough for many website with the same format.
