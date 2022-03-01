@@ -1,18 +1,22 @@
 # WIP meminisse
+
 ## An experimental password generator
 
 <!-- TOC -->
 
-- [Deescription](#description)
-- [Requirements](#requirements)
-- [Upcoming-features](#to-be-added)
-- [Contribution](#contributionguide)
+- [WIP meminisse](#wip-meminisse)
+  - [An experimental password generator](#an-experimental-password-generator)
+    - [Description](#description)
+    - [Requirements](#requirements)
+    - [Release v0.0.4 Neira](#release-v004-neira)
+    - [Features to be added](#features-to-be-added)
+    - [Quick start](#quick-start)
+    - [Contribution guide](#contribution-guide)
 
 ### Description
 
 An experimental password generator, make password from set of words
-this can be a complete sensible sentence or vene jumled sentence with no real meaning, but this set of words must be tailored to each individual to act as an unique set of password after conversion. For the current release this must be entered each time user need a new password, an account system is currently in the work that aims to saves each user preferences for an easy centralized generation, but of course this is an issuee of itself as this feature will likely compromise user password, so on the way to find an acceptable alternative.
-
+this can be a complete sensible sentence or even jumled sentence with no real meaning, but this set of words must be tailored to each individual to act as an unique set of password after conversion. In a nutshell this web functions with only a function that return a string that is the password. For the current release this must be entered each time user need a new password, an account system is currently in the work that aims to saves each user preferences for an easy centralized generation, but of course this is an issuee of itself as this feature will likely compromise user password, so on the way to find an acceptable alternative.
 
 ### Requirements
 
@@ -33,10 +37,10 @@ this can be a complete sensible sentence or vene jumled sentence with no real me
 
 ### Release v0.0.4 Neira
 
-Deployed to Heroku https://reminisse.herokuapp.com/,
-fixed grammar and typo.
+Deployed to Heroku <https://reminisse.herokuapp.com/>,
+grammar and typo fixes, minor ui bug fix.
 
-### To be added
+### Features to be added
 
 1. Error catching
 2. Algorithm improvement
@@ -50,13 +54,14 @@ fixed grammar and typo.
 
 Download or Fork-Clone the repo, install the requirements located in requirements.txt with:
 
+```python
+pip install -r requirements.txt
 ```
-$ pip install -r requirements.txt
-```
+
 Then run with
 
-```
-$ flask run
+```python
+flask run
 ```
 
 ### Contribution guide
