@@ -16,7 +16,7 @@
 ### Description
 
 An experimental password generator, make password from set of words
-this can be a complete sensible sentence or even jumled sentence with no real meaning, but this set of words must be tailored to each individual to act as an unique set of password after conversion. In a nutshell this web functions with only a function that return a string that is the password. For the current release this must be entered each time user need a new password, an account system is currently in the work that aims to saves each user preferences for an easy centralized generation, but of course this is an issuee of itself as this feature will likely compromise user password, so on the way to find an acceptable alternative. I've containerized the web app fro easy provision
+this can be a complete sensible sentence or even jumled sentence with no real meaning, but this set of words must be tailored to each individual to act as an unique set of password after conversion. In a nutshell this web functions with only a function that return a string that is the password. For the current release this must be entered each time user need a new password, an account system is currently in the work that aims to saves each user preferences for an easy centralized generation, but of course this is an issuee of itself as this feature will likely compromise user password, so on the way to find an acceptable alternative. I've containerized the web app for easy provision
 
 ### Requirements
 
