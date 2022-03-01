@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  meminisse:
+    build: ./
+    ports:
+      - 5000:5000
+    container_name: meminisse_webapp
+    
