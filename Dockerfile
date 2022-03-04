@@ -38,4 +38,6 @@ USER 999
 
 # run the webapp
 ENV PATH="/usr/src/app/venv/bin:$PATH"
-CMD [ "gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app" ]
+ENV DEBUG=0
+
+CMD gunicorn wsgi:app --bind 0.0.0.0:$PORT
